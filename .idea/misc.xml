@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/baggingcolocatedstatussyncconsumer/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/baggingkafkaconsumerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/baggingraeventkafkaconsumer/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/baggingschedulerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/baggingservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/baggingsorterbaginscanv1syncconsumer/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/baggingsorterdebagconsumerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/baggingsorterintegration/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/baggingstatusupdateservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/baggingv1mmbagsync/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/baggingv1sriweightupdatesyncconsumer/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/bulkuploadscheduler/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/cobconsumer/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/exppluschedulerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/expplusrdskafkaconsumerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/expplusshipmentkafkaconsumerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/geokafkconsumerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/instructionCloseConsumer/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/kafka/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/manifestasyncconsumer/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/multikafkaconsumerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/rabbitmqscheduler/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/redirectionkafkaconsumerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/rtscreationkafkaconsumerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/rtspullv1v2historyservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/rtsrvpdestutilityconsumerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/rtsrvputility/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/rtsv1v2syncservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/shipmentawbgensch/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/shipmentcommondatastore/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/shipmentcommonservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/shipmentconfigservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/shipmentdatasource/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/shipmentedd/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/shipmentpickuplocationutility/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/shipmentpostmanifestationservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/shipmentservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/sorterdbsyncservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/v1v2baghistorysyncservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/v1v2historysyncservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/v1v2rvpcancellationhistorysyncutility/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/v2v1shipmentstatussyncservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/zoningkafkaconsumerservice/pom.xml" />
+        <option value="$USER_HOME$/Documents/EcomCodeBase/shipment_service/ecom-parrent/zoningsyncschedulerservice/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
