@@ -22,6 +22,11 @@ public class Student {
         this.city = city;
     }
 
+    public Student(String name, String city) {
+        this.name = name;
+        this.city = city;
+    }
+
     public int getRollNumber() {
         return rollNumber;
     }

@@ -14,7 +14,7 @@ public class GetWorking {
 
         Session session = sessionFactory.openSession();
 
-        Student student = (Student) session.get(Student.class,2);
+        Student student = (Student) session.get(Student.class,4);
 
         if(student==null)System.out.println("no student found");
 
