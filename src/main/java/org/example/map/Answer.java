@@ -1,6 +1,10 @@
 package org.example.map;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.JoinColumn;
 
 @Entity
 public class Answer {
@@ -8,11 +12,11 @@ public class Answer {
     @Id
     @Column(name = "answer_id")
     private int answerId;
-    private String text;
+    private String answerText;
 
-//    @ManyToOne
-//    @JoinColumn(name = "qid")
-//    private Question question;
+    @JoinColumn(name = "q_id")
+    @OneToOne(mappedBy = "answer") // this foreign key will be shown in the Question table,
+    private Question question;     // but bidirectional mapping is still there.
 
     public int getAnswerId() {
         return answerId;
@@ -22,28 +26,22 @@ public class Answer {
         this.answerId = answerId;
     }
 
-    public String getText() {
-        return text;
+    public String getAnswerText() {
+        return answerText;
     }
 
-//    public Question getQuestion() {
-//        return question;
-//    }
-//
-//    public void setQuestion(Question question) {
-//        this.question = question;
-//    }
+    public void setAnswerText(String answerText) {
+        this.answerText = answerText;
+    }
 
-    public void setText(String text) {
-        this.text = text;
+    public Question getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(Question question) {
+        this.question = question;
     }
 
     public Answer() {
-    }
-
-    public Answer(int answerId, String text) {
-        this.answerId = answerId;
-        this.text = text;
-//        this.question = question;
     }
 }

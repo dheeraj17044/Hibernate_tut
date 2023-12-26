@@ -1,6 +1,10 @@
 package org.example.map;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.JoinColumn;
 import java.util.List;
 
 @Entity
@@ -9,15 +13,12 @@ public class Question {
     @Id
     @Column(name="question_id")
     private int questionId;
-    private String text;
+    private String questionText;
 
-//    @OneToOne
-//    @JoinColumn(name="a_id")
+    @OneToOne
+    @JoinColumn(name="a_id")
+    private Answer answer;
 
-//    @OneToMany(mappedBy = "question")
-
-    @OneToMany
-    private List<Answer> answers;
 
     public int getQuestionId() {
         return questionId;
@@ -27,37 +28,22 @@ public class Question {
         this.questionId = questionId;
     }
 
-    public String getText() {
-        return text;
+    public String getQuestionText() {
+        return questionText;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setQuestionText(String questionText) {
+        this.questionText = questionText;
     }
 
-    public List<Answer> getAnswerId() {
-        return answers;
+    public Answer getAnswer() {
+        return answer;
     }
 
-    public void setAnswerId(List<Answer> answerId) {
-        this.answers = answerId;
+    public void setAnswer(Answer answer) {
+        this.answer = answer;
     }
 
     public Question() {
-    }
-
-    public Question(int questionId, String text, List<Answer> answers) {
-        this.questionId = questionId;
-        this.text = text;
-        this.answers = answers;
-    }
-
-    @Override
-    public String toString() {
-        return "Question{" +
-                "questionId=" + questionId +
-                ", text='" + text + '\'' +
-                ", answers=" + answers +
-                '}';
     }
 }
