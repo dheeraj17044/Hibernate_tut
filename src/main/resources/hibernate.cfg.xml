@@ -12,7 +12,7 @@
         <property name="connection.username">root</property>
         <property name="connection.password"></property>
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property> <!-- data base language-->
-        <property name="hbm2ddl.auto">create</property> <!-- create: - create table again, update: - create if not existed -->
+        <property name="hbm2ddl.auto">update</property> <!-- create: - create table again, update: - create if not existed -->
         <property name="show_sql">true</property>
 <!--        <mapping class="org.example.Student" />-->
 <!--        <mapping class="org.example.StudentAdress" />-->

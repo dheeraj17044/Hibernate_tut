@@ -44,4 +44,13 @@ public class Answer {
 
     public Answer() {
     }
+
+    @Override
+    public String toString() {
+        return "Answer{" +
+                "answerId=" + answerId +
+                ", answerText='" + answerText + '\'' +
+                ", question=" + question +
+                '}';
+    }
 }

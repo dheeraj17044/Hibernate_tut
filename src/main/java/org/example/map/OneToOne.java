@@ -30,6 +30,19 @@ public class OneToOne {
         answer1.setQuestion(question1);
 
 
+        Answer answer2 = new Answer();
+        answer2.setAnswerId(202);
+        answer2.setAnswerText("Intellij is the IDE");
+
+
+        Question question2 = new Question();
+        question2.setQuestionId(102);
+        question2.setQuestionText("What is Intellij?");
+        question2.setAnswer(answer2);
+
+        answer2.setQuestion(question2);
+
+
         // opening session
         Session session = sessionFactory.openSession();
         // creating transaction
@@ -37,8 +50,10 @@ public class OneToOne {
 
         try{
             // saving the entity
-            session.save(question1);
-            session.save(answer1);
+//            session.save(question1);
+//            session.save(answer1);
+            session.save(question2);
+//            session.save(answer2);
 
         }catch (Exception e){
             e.printStackTrace();
