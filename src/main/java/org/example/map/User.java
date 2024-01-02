@@ -15,7 +15,12 @@ public class User {
     private String userName;
 
     @ManyToMany
-    @JoinColumn(name = "p_id")
+    @JoinTable(name = "user_account", // @ManyToMany annotation ki wajah se form hone wale table ka name defined kar denge
+            joinColumns ={
+                @JoinColumn(name = "u_id") // current table ki primary key
+            },
+            inverseJoinColumns = {@JoinColumn(name = "p_id") // dusre table ki primary key
+            })
     private List<Pharmacy> pharmacies;
 
     public User() {

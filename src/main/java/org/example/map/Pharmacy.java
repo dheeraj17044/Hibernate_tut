@@ -15,7 +15,6 @@ public class Pharmacy {
     private String pharmacyName;
 
     @ManyToMany(mappedBy = "pharmacies")
-//    @JoinColumn(name = "u_id")
     private List<User> users;
 
     public Pharmacy() {

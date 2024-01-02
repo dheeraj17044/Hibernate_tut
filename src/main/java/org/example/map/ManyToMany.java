@@ -11,6 +11,9 @@ import java.util.List;
 public class ManyToMany {
 
     public static void main(String []args) {
+
+        /* ------ ManyToMany Mapping between User and Pharmacy--------- */
+
         Configuration cfg = new Configuration();
         cfg.configure("hibernate.cfg.xml");
         SessionFactory sessionFactory = cfg.buildSessionFactory();
@@ -68,19 +71,6 @@ public class ManyToMany {
         session.save(u2);
 
         tx.commit();
-
-
-//        User getUser = (User) session.get(User.class,1);
-//        System.out.println("retreeived user :::::: " +getUser);
-
-        Pharmacy getPharmacy = (Pharmacy) session.get(Pharmacy.class,103);
-        System.out.println("retreeived Pharmacy :::::: " +getPharmacy);
-
-        System.out.println("retreeived Pharmacy user list size :::::: " +getPharmacy.getUsers().size());
-
-//        for(User user: getPharmacy.getUsers()){
-//            System.out.println("user :::::: " +user);
-//        }
 
 
         session.close();

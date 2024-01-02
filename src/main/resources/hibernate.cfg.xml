@@ -18,10 +18,10 @@
 <!--        <mapping class="org.example.StudentAdress" />-->
 <!--        <mapping class="org.example.map.Answer" />-->
 <!--        <mapping class="org.example.map.Question" />-->
-<!--        <mapping class="org.example.map.User" />-->
-<!--        <mapping class="org.example.map.Pharmacy" />-->
-        <mapping class="org.example.map.Department" />
-        <mapping class="org.example.map.Employee" />
+        <mapping class="org.example.map.User" />
+        <mapping class="org.example.map.Pharmacy" />
+<!--        <mapping class="org.example.map.Department" />-->
+<!--        <mapping class="org.example.map.Employee" />-->
 
     </session-factory>
 </hibernate-configuration>
