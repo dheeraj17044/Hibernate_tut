@@ -18,6 +18,8 @@ public class OneToMany {
         cfg.configure("hibernate.cfg.xml");
         SessionFactory sessionFactory = cfg.buildSessionFactory();
 
+/*
+
         Employee employee1 = new Employee();
         employee1.setEmployeeId(1);
         employee1.setEmployeeName("Dheeraj");
@@ -68,8 +70,30 @@ public class OneToMany {
 
 
         employee4.setEmployeeDepartment(department2);
+*/
+
+        Employee employee1 = new Employee();
+        employee1.setEmployeeId(10);
+        employee1.setEmployeeName("Gaurav");
+//        employee1.setEmployeeDepartment(101);
+
+        Employee employee2 = new Employee();
+        employee2.setEmployeeId(11);
+        employee2.setEmployeeName("Suman");
+//        employee2.setEmployeeDepartment(101);
 
 
+        List<Employee> employeeList = new ArrayList<>();
+        employeeList.add(employee1);
+        employeeList.add(employee2);
+
+        Department department = new Department();
+        department.setDepartmentId(103);
+        department.setDepartmentName("FIN");
+        department.setEmployeeList(employeeList);
+
+        employee1.setEmployeeDepartment(department);
+        employee2.setEmployeeDepartment(department);
 
 
         // opening session
@@ -80,12 +104,18 @@ public class OneToMany {
         try{
             // saving the entity
 
-            session.save(employee1);
+            // saving the department only --> employees will be saved automatically due to CascadeType.ALL
+            session.save(department);
+
+
+/*            session.save(employee1);
             session.save(employee2);
             session.save(employee3);
             session.save(employee4);
             session.save(department1);
             session.save(department2);
+
+ */
 
         }catch (Exception e){
             e.printStackTrace();

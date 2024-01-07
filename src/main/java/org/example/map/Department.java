@@ -14,9 +14,10 @@ public class Department {
     @Column(name = "dept_name")
     private String departmentName;
 
-    @OneToMany(mappedBy = "employeeDepartment",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "employeeDepartment",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     private List<Employee> employeeList;     // FetchType.EAGER --> on the spot List<Employee> fetch karke le aayega
                                             // FetchType.LAZY --> jarurat padne/get() call karne par List<Employee> fetch karke le aayega
+                                            // CascadeType.ALL --> har tarike ka cascade apply ho gya related entity par (Employee)
 
 
     public Department() {
