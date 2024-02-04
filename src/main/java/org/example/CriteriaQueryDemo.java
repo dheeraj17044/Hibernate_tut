@@ -127,6 +127,9 @@ public class CriteriaQueryDemo {
         }
 
  */
+
+//        ######################  using List<predicates>
+
         Root<Student> root =  criteria.from(Student.class);
         criteria.select(root);
         Predicate p1 = criteriaBuilder.like(root.get("name"),"%j%");
