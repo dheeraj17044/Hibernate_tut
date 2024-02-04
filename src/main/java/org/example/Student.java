@@ -1,9 +1,17 @@
 package org.example;
 
-import javax.persistence.*;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Cacheable;
+import javax.persistence.Id;
 
 @Entity
 @Table(name = "student")
+@Cacheable
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 public class Student {
     @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)

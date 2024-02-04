@@ -16,6 +16,10 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property> <!-- formatting the hibernate query in sql format -->
 
+        <!-- set properties for 2nd level cache (manually enable karni padegi) -->
+        <property name="cache.use_second_level_cache">true</property>
+        <property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
+
         <mapping class="org.example.Student" />
 
 <!--        <mapping class="org.example.StudentAdress" />-->
